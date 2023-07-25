@@ -1,0 +1,15 @@
+# Imagem de base que contém o Python
+FROM python:3.9
+
+# Copiar o código Python para dentro do contêiner
+COPY gerar_token.py .
+
+# Instalar as dependências necessárias
+RUN pip install flask pyjwt
+
+# Expor a porta em que a aplicação estará disponível
+EXPOSE 5000
+
+# Comando para executar a aplicação
+CMD ["python", "gerar_token.py"]
+
