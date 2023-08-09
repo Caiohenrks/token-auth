@@ -2,6 +2,11 @@
 
 # Demonstração de Comunicação entre Aplicações com Docker
 
+
+# Instalação
+- Dar permissão ao arquivo ```chmod +x install_cenarios.sh```
+- Executar o instalador para buildar a imagem e subir o container ``` ./install_cenarios.sh```
+
 Essa solução é um cenário de exemplo que demonstra o uso do Docker para implantar duas aplicações em contêineres separados, que se comunicam através de solicitações HTTP.
 
 ## Descrição dos Arquivos
